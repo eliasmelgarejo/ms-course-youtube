@@ -25,3 +25,7 @@ spring:
           uri: lb://shopping-service
           predicates:
             - Path=/invoices/**
+        - id: helloworld-service
+          uri: lb://helloworld-service
+          predicates:
+            - Path=/helloworld/**
